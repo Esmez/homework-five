@@ -1,0 +1,56 @@
+.wrapper {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-top: 200px;
+
+    .aboutPerson {
+        max-width: 676px;
+        min-height: 150px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: 30px;
+
+
+        .personImage {
+            width: 250px;
+            height: 150px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .about-client {
+            width: 385px;
+            p {
+                font-size: 16px;
+                font-family: cursive;
+            }
+        }
+
+        .author {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            color: #79ADDC;
+        }
+    }
+}
+
+@media only screen and (max-width: 744px) {
+    .aboutPerson {
+        flex-direction: column;
+        padding-bottom: 20px;
+        .personImage {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .about-client {
+            display: block;
+        }
+    }
+}
